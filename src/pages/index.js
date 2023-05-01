@@ -5,8 +5,8 @@ import Experience from "./experience/Experience";
 import Project from "./project/Project";
 import Contact from "./contact/Contact";
 import styled from "styled-components";
-import Navigation from "@/components/navigation/Navigation";
-import Footer from "@/components/footer/Footer";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
