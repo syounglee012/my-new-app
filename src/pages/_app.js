@@ -1,4 +1,7 @@
 import Head from "next/head";
+import "../styles/globals.css";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,8 +16,9 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navigation />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

@@ -11,19 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <Container>
-      <Navigation />
+    <>
       <About />
       <Experience />
       <Project />
-      <Footer />
-    </Container>
+    </>
   );
 }
-
-const Container = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #0a192f;
-`;

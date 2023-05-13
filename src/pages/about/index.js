@@ -22,13 +22,15 @@ export default function About() {
 
 const Container = styled.div`
   width: 100%;
+  position: relative;
+  top: 0;
   color: #ccd6f6;
 `;
 
 const Wrap = styled.div`
   max-width: 600px;
-  margin: 10rem auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 20rem 20px;
   text-align: left;
   p {
     font-size: 18px;
