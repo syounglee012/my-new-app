@@ -36,13 +36,13 @@ const Container = styled.div`
     width: 100%;
     height: 100px;
     top: 0;
-    background-color: #000;
+    background-color: #ffda63;
     transition: transform 0.3s ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    opacity: 0.7;
+    z-index: 1;
+    opacity: 0.5;
   }
 
   .nav-hidden {
@@ -51,7 +51,8 @@ const Container = styled.div`
 
   h4 {
     font-size: 30px;
-    color: #64ffda;
+    color: #ffda63;
+    z-index: 2;
     /* margin: 0;
     padding: 0; */
   }

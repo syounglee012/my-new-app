@@ -26,10 +26,10 @@ export default function About() {
               window.open("https://www.linkedin.com/in/swe-samlee/")
             }
           >
-            <CiLinkedin size={28} />
+            <CiLinkedin size={28} className="icon" />
           </span>
           <span onClick={() => window.open("https://github.com/syounglee012")}>
-            <VscGithub size={25} />
+            <VscGithub size={25} className="icon" />
           </span>
         </BottomWrap>
       </Wrap>
@@ -92,5 +92,8 @@ const BottomWrap = styled.div`
     height: fit-content;
     margin-left: 10px;
     cursor: pointer;
+    &:hover {
+      color: #ffda63;
+    }
   }
 `;

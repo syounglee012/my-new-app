@@ -7,7 +7,7 @@ export default function Experience() {
 
   return (
     <Container>
-      <h4>Experiences</h4>
+      <h4>Work Experience</h4>
       <Wrap>
         <ToggleWrap>
           <Virtical />
@@ -45,15 +45,19 @@ export default function Experience() {
 
 const Container = styled.div`
   width: 100%;
+  max-width: 910px;
   height: 90vh;
   color: #ccd6f6;
+  margin: 0 auto;
+  padding: 2rem;
+  align-self: start;
+
   h4 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
     font-size: 30px;
     margin-bottom: 3rem;
     margin-top: 0;
-    padding-left: 18rem;
     color: #ffda63;
   }
 `;
@@ -61,10 +65,6 @@ const Container = styled.div`
 const Wrap = styled.div`
   width: 100%;
   display: flex;
-  max-width: 890px;
-  margin: 0 auto;
-  align-self: start;
-  justify-content: space-evenly;
 `;
 
 const ListWrap = styled.div`
@@ -92,9 +92,10 @@ const ListWrap = styled.div`
   }
   ul li {
     font-size: 20px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.8px;
+    line-height: 1.6;
     opacity: 0.7;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Times New Roman", Times, serif;
   }
   ul li::before {
     content: "▹";
@@ -105,15 +106,16 @@ const ListWrap = styled.div`
 
 const ToggleWrap = styled.div`
   width: 100%;
-  max-width: 300px;
+  max-width: 230px;
   display: flex;
   padding-top: 3rem;
 `;
 
 const Virtical = styled.div`
   width: 1px;
-  height: 200px;
+  height: 100px;
   background-color: #ffffff;
+  opacity: 0.3;
 `;
 
 const Toggle = styled.div`
@@ -121,7 +123,7 @@ const Toggle = styled.div`
   margin: 0;
 
   ul {
-    padding: 0 0 0 13px;
+    padding: 0 0 0 10px;
     line-height: 2;
 
     li {
