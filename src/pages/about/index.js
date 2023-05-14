@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function About() {
   return (
@@ -18,7 +19,12 @@ export default function About() {
           build products that provide pixel-perfect, performant experiences.
         </p>
         <BottomWrap>
-          <button className="button">Resume</button>
+          <button
+            className="button"
+            onClick={() => window.open("files/resume.pdf")}
+          >
+            Resume
+          </button>
           <div />
 
           <span
@@ -30,6 +36,13 @@ export default function About() {
           </span>
           <span onClick={() => window.open("https://github.com/syounglee012")}>
             <VscGithub size={25} className="icon" />
+          </span>
+          <span
+            onClick={() =>
+              (window.location.href = `mailto: swe.samlee@gmail.com`)
+            }
+          >
+            <HiOutlineMail size={28} className="icon" />
           </span>
         </BottomWrap>
       </Wrap>

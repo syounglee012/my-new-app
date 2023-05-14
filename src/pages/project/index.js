@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import project from "@/data/project.json";
 import Image from "next/image";
-import zero from "../../../public/images/triumph.png";
+import triumphImg from "../../../public/images/triumph.png";
+import lawImg from "../../../public/images/law.png";
+import devotionImg from "../../../public/images/devotion.png";
+import challengeImg from "../../../public/images/challenge.png";
+import blogImg from "../../../public/images/blog.png";
+import restroomImg from "../../../public/images/restroom.png";
+import portfolioImg from "../../../public/images/portfolio.png";
+
 import { MdWebAsset } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { MdOndemandVideo } from "react-icons/md";
@@ -18,7 +25,23 @@ export default function Project() {
           selected === item.id ? (
             <ListWrap key={item.id}>
               <Image
-                src={item.image === "triumph" ? zero : ""}
+                src={
+                  item.image === "triumph"
+                    ? triumphImg
+                    : item.image === "law"
+                    ? lawImg
+                    : item.image === "devotion"
+                    ? devotionImg
+                    : item.image === "portfolio"
+                    ? portfolioImg
+                    : item.image === "challenge"
+                    ? challengeImg
+                    : item.image === "blog"
+                    ? blogImg
+                    : item.image === "restroom"
+                    ? restroomImg
+                    : ""
+                }
                 alt={item.title}
                 className="project-image"
                 width={550}
@@ -109,8 +132,10 @@ const Container = styled.div`
 
 const Wrap = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 `;
 
 const BottomWrap = styled.div`
@@ -152,16 +177,20 @@ const ListWrap = styled.div`
     width: 100%;
     height: 100%;
     margin-bottom: 1rem;
+    opacity: 0.7;
   }
 
   h5 {
-    font-size: 22px;
+    font-family: "Courier New", Courier, monospace;
+    min-width: 130px;
+    font-size: 24px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 1rem;
+    opacity: 0.7;
   }
   ul {
     list-style: none;
@@ -185,7 +214,10 @@ const ListWrap = styled.div`
     margin-bottom: 1rem;
     li {
       color: #ffda63;
-      font-family: "Times New Roman", Times, serif;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
+      letter-spacing: 0px;
+      opacity: 0.8;
     }
     li::before {
       content: "";
@@ -198,6 +230,7 @@ const ToggleWrap = styled.div`
   max-width: 230px;
   display: flex;
   padding-top: 3rem;
+  gap: 14px;
 `;
 
 const Virtical = styled.div`
@@ -212,7 +245,6 @@ const Toggle = styled.div`
   margin: 0;
 
   ul {
-    padding: 0 0 0 10px;
     line-height: 2;
 
     li {
