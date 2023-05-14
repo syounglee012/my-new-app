@@ -13,5 +13,6 @@ const Container = styled.div`
   height: 100px;
   background-color: yellow;
   position: absolute;
+  left: 0;
   bottom: 0;
 `;

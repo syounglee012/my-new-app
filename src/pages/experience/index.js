@@ -7,7 +7,7 @@ export default function Experience() {
 
   return (
     <Container>
-      <h4>Work Experiences</h4>
+      <h4>Experiences</h4>
       <Wrap>
         <ToggleWrap>
           <Virtical />
@@ -28,10 +28,8 @@ export default function Experience() {
         {work.map((item) =>
           selected === item.id ? (
             <ListWrap key={item.id}>
-              <h5>{item.company}</h5>
-              <p>{item.position}</p>
+              <h5>{item.position}</h5> <h6> @{item.company}</h6>
               <p>{item.duration}</p>
-              <p>{item.location}</p>
               <ul>
                 {item.responsibilities.map((responsibility) => (
                   <li key={responsibility}>{responsibility}</li>
@@ -47,24 +45,26 @@ export default function Experience() {
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 90vh;
   color: #ccd6f6;
   h4 {
+    font-family: "Courier New", Courier, monospace;
     width: 100%;
     font-size: 30px;
     margin-bottom: 3rem;
     margin-top: 0;
-    padding-left: 10rem;
-    color: #64ffda;
+    padding-left: 18rem;
+    color: #ffda63;
   }
 `;
 
 const Wrap = styled.div`
   width: 100%;
   display: flex;
-  max-width: 800px;
+  max-width: 890px;
   margin: 0 auto;
   align-self: start;
+  justify-content: space-evenly;
 `;
 
 const ListWrap = styled.div`
@@ -72,28 +72,48 @@ const ListWrap = styled.div`
   text-align: left;
 
   h5 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     margin-top: 0;
+    display: inline-block;
+  }
+  h6 {
+    font-size: 20px;
+    display: inline-block;
+    color: #ffda63;
   }
   p {
     font-size: 18px;
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 1rem;
   }
   ul {
-    li {
-      font-size: 18px;
-      line-height: 1.5;
-    }
+    list-style: none;
+  }
+  ul li {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    opacity: 0.7;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  ul li::before {
+    content: "▹";
+    color: #ffda63;
+    margin-right: 5px;
   }
 `;
 
 const ToggleWrap = styled.div`
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   display: flex;
   padding-top: 3rem;
+`;
+
+const Virtical = styled.div`
+  width: 1px;
+  height: 200px;
+  background-color: #ffffff;
 `;
 
 const Toggle = styled.div`
@@ -101,23 +121,24 @@ const Toggle = styled.div`
   margin: 0;
 
   ul {
-    padding: 0 0 0 10px;
-    li {
-      cursor: pointer;
+    padding: 0 0 0 13px;
+    line-height: 2;
 
-      &:hover {
-        color: #64ffda;
-      }
+    li {
+      opacity: 0.7;
+      cursor: pointer;
+      letter-spacing: 1px;
+      list-style: square;
+      font-family: "Courier New", Courier, monospace;
     }
 
-    .clicked {
-      color: #64ffda;
+    &:hover {
+      color: #ffda63;
     }
   }
-`;
 
-const Virtical = styled.div`
-  width: 1px;
-  height: 300px;
-  background-color: #ffffff;
+  .clicked {
+    opacity: 1;
+    color: #ffda63;
+  }
 `;

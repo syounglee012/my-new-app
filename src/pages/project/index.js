@@ -29,12 +29,21 @@ export default function Project() {
 
 const Container = styled.div`
   width: 100%;
+  height: 100vh;
   color: #ccd6f6;
+  h4 {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    padding-left: 58rem;
+    color: #ffda63;
+  }
 `;
 
 const Wrap = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -52,11 +61,7 @@ const Box = styled.div`
   max-width: 500px;
   padding: 0 20px;
   text-align: left;
-  h4 {
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
+
   h5 {
     font-size: 20px;
     margin-bottom: 10px;
