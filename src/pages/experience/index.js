@@ -46,11 +46,10 @@ export default function Experience() {
 const Container = styled.div`
   width: 100%;
   max-width: 910px;
-  height: 90vh;
+  height: 85vh;
   color: #ccd6f6;
   margin: 0 auto;
-  padding: 2rem;
-  align-self: start;
+  padding: 7rem 2rem 0 2rem;
 
   h4 {
     font-family: "Courier New", Courier, monospace;

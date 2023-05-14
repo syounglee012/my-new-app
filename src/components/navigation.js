@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import Hamburger from "./hamburger";
 
-export default function Navigation() {
+export default function Navigation({
+  HandleAboutScroll,
+  HandleExperienceScroll,
+  HandleProjectScroll,
+}) {
   useEffect(() => {
     if (window) {
       let prevScrollPos = window.pageYOffset;
@@ -20,21 +25,21 @@ export default function Navigation() {
   return (
     <Container>
       <nav id="mainNav">
-        <h4>SL</h4>
-        <ul>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Projects</li>
-        </ul>
+        <Hamburger
+          HandleAboutScroll={HandleAboutScroll}
+          HandleExperienceScroll={HandleExperienceScroll}
+          HandleProjectScroll={HandleProjectScroll}
+        />
       </nav>
     </Container>
   );
 }
 
 const Container = styled.div`
+  position: relative;
   #mainNav {
     width: 100%;
-    height: 100px;
+    height: 70px;
     top: 0;
     background-color: #ffda63;
     transition: transform 0.3s ease-in-out;
@@ -55,12 +60,5 @@ const Container = styled.div`
     z-index: 2;
     /* margin: 0;
     padding: 0; */
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
   }
 `;

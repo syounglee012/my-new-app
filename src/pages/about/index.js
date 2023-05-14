@@ -11,7 +11,7 @@ export default function About() {
         <p className="hi">Hi, my name is</p>
         <h1>Sam Lee.</h1>
         <h2>I create things for the web.</h2>
-        <p>I&#39;m a software engineer based in the beautiful city of</p>{" "}
+        <p>I&#39;m a web developer based in the beautiful city of</p>{" "}
         <p className="p-colored"> Seattle, WA.</p>
         <p className="last-part">
           I enjoy creating things that live on the internet, whether that be
