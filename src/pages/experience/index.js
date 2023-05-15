@@ -46,7 +46,7 @@ export default function Experience() {
 const Container = styled.div`
   width: 100%;
   max-width: 910px;
-  height: 85vh;
+  height: 100vh;
   color: #ccd6f6;
   margin: 0 auto;
   padding: 7rem 2rem 0 2rem;
@@ -61,7 +61,6 @@ const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 100vh;
     padding: 5rem 1rem 0 1rem;
   }
 `;
