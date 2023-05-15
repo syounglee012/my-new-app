@@ -56,6 +56,13 @@ export default function Hamburger({
         <li onClick={() => HandleAboutScroll()}>About</li>
         <li onClick={() => HandleExperienceScroll()}>Work Experience</li>
         <li onClick={() => HandleProjectScroll()}>Project</li>
+        <li
+          onClick={() =>
+            (window.location.href = `mailto: swe.samlee@gmail.com`)
+          }
+        >
+          Contact
+        </li>
       </ul>
     </Container>
   );
