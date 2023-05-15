@@ -11,8 +11,11 @@ export default function About() {
         <p className="hi">Hi, my name is</p>
         <h1>Sam Lee.</h1>
         <h2>I create things for the web.</h2>
-        <p>I&#39;m a web developer based in the beautiful city of</p>{" "}
-        <p className="p-colored"> Seattle, WA.</p>
+        <span className="top-p">
+          I&#39;m a web developer based in the beautiful city of{" "}
+          <p className="p-colored"> Seattle, WA.</p>
+        </span>
+
         <p className="last-part">
           I enjoy creating things that live on the internet, whether that be
           websites, applications, or anything in between. My goal is to always
@@ -61,7 +64,7 @@ const Wrap = styled.div`
   margin: 0 auto;
   padding: 20rem 20px;
   text-align: left;
-  p {
+  .top-p {
     font-size: 18px;
     line-height: 1.5;
     margin: 0;
@@ -70,9 +73,13 @@ const Wrap = styled.div`
   }
   .p-colored {
     color: #ffda63;
+    display: inline-block;
   }
   .last-part {
     margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.7;
   }
   .hi {
     color: #ffda63;
