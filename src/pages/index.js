@@ -13,6 +13,8 @@ export default function Home() {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectRef = useRef(null);
+  const [experienceVisible, setExperienceVisible] = useState(false);
+  const [projectVisible, setProjectVisible] = useState(false);
 
   const HandleAboutScroll = () => {
     aboutRef.current.scrollIntoView({ behavior: "smooth" }, 1000);
@@ -24,6 +26,38 @@ export default function Home() {
   const HandleProjectScroll = () => {
     projectRef.current.scrollIntoView({ behavior: "smooth" }, 1000);
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === experienceRef.current) {
+            setExperienceVisible(true);
+            observer.unobserve(entry.target);
+          } else if (entry.target === projectRef.current) {
+            setProjectVisible(true);
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    });
+
+    if (experienceRef.current) {
+      observer.observe(experienceRef.current);
+    }
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (experienceRef.current) {
+        observer.unobserve(experienceRef.current);
+      }
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, []);
 
   return (
     <Container>
@@ -38,11 +72,13 @@ export default function Home() {
       </span>
 
       <div ref={experienceRef} />
-
-      <Experience />
+      <span className={experienceVisible ? "transition" : ""}>
+        <Experience />
+      </span>
       <div ref={projectRef} />
-
-      <Project />
+      <span className={projectVisible ? "transition" : ""}>
+        <Project />
+      </span>
       <Footer />
     </Container>
   );
@@ -55,15 +91,19 @@ const Container = styled.div`
 
   .transition {
     transition-delay: 4s;
-    transition: 4s ease in;
+    transition: 4s ease-in;
+    transform: translateY(0);
     animation: fadeIn 3s linear;
   }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
+      transform: translateY(100px); /* Example animation: translate on Y-axis */
     }
     100% {
       opacity: 1;
+      transform: translateY(0); /* Animation ends at original position */
     }
   }
 `;
