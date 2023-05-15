@@ -13,8 +13,6 @@ const Container = styled.div`
   height: 60px;
   background-color: #0a192f;
   position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;

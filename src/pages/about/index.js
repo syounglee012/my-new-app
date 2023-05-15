@@ -52,6 +52,7 @@ export default function About() {
 
 const Container = styled.div`
   width: 100%;
+  height: 100%;
   color: #ccd6f6;
 `;
 
@@ -86,6 +87,10 @@ const Wrap = styled.div`
     margin-bottom: 30px;
     margin-top: 0;
     opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10rem 20px 5rem;
   }
 `;
 

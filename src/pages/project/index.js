@@ -114,7 +114,7 @@ export default function Project() {
 const Container = styled.div`
   width: 100%;
   max-width: 910px;
-  height: 100%;
+  height: 120vh;
   color: #ccd6f6;
   margin: 0 auto;
   padding: 2rem;
@@ -128,14 +128,25 @@ const Container = styled.div`
     color: #ffda63;
     text-align: right;
   }
+  @media (max-width: 768px) {
+    padding: 1rem;
+    h4 {
+      text-align: left;
+    }
+  }
 `;
 
 const Wrap = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
 `;
 
 const BottomWrap = styled.div`
@@ -223,6 +234,25 @@ const ListWrap = styled.div`
       content: "";
     }
   }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0;
+
+    ul li {
+      font-size: 15px;
+    }
+
+    .framwork {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 const ToggleWrap = styled.div`
@@ -230,7 +260,13 @@ const ToggleWrap = styled.div`
   max-width: 230px;
   display: flex;
   padding-top: 3rem;
-  gap: 14px;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Virtical = styled.div`
@@ -238,6 +274,10 @@ const Virtical = styled.div`
   height: 300px;
   background-color: #ffffff;
   opacity: 0.3;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Toggle = styled.div`
@@ -245,8 +285,8 @@ const Toggle = styled.div`
   margin: 0;
 
   ul {
+    padding: 0 0 0 10px;
     line-height: 2;
-
     li {
       opacity: 0.7;
       cursor: pointer;
@@ -263,5 +303,16 @@ const Toggle = styled.div`
   .clicked {
     opacity: 1;
     color: #ffda63;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    ul li {
+      font-size: 16px;
+      padding: 0 10px 0 0;
+      letter-spacing: 0.2px;
+    }
   }
 `;

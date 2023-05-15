@@ -90,20 +90,15 @@ const Container = styled.div`
   position: relative;
 
   .transition {
-    transition-delay: 4s;
-    transition: 4s ease-in;
-    transform: translateY(0);
-    animation: fadeIn 3s linear;
+    animation: fadeIn 3s ease-in-out forwards; /* Animation properties */
   }
 
   @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translateY(100px); /* Example animation: translate on Y-axis */
     }
     100% {
       opacity: 1;
-      transform: translateY(0); /* Animation ends at original position */
     }
   }
 `;

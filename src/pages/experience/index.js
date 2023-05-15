@@ -59,11 +59,20 @@ const Container = styled.div`
     margin-top: 0;
     color: #ffda63;
   }
+
+  @media (max-width: 768px) {
+    height: 100vh;
+    padding: 5rem 1rem 0 1rem;
+  }
 `;
 
 const Wrap = styled.div`
   width: 100%;
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ListWrap = styled.div`
@@ -101,6 +110,14 @@ const ListWrap = styled.div`
     color: #ffda63;
     margin-right: 5px;
   }
+
+  @media (max-width: 768px) {
+    padding: 0;
+
+    ul li {
+      font-size: 16px;
+    }
+  }
 `;
 
 const ToggleWrap = styled.div`
@@ -108,6 +125,11 @@ const ToggleWrap = styled.div`
   max-width: 230px;
   display: flex;
   padding-top: 3rem;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding-top: 0;
+  }
 `;
 
 const Virtical = styled.div`
@@ -115,6 +137,10 @@ const Virtical = styled.div`
   height: 100px;
   background-color: #ffffff;
   opacity: 0.3;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Toggle = styled.div`
@@ -141,5 +167,26 @@ const Toggle = styled.div`
   .clicked {
     opacity: 1;
     color: #ffda63;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    ul {
+      padding: 0 0 0 40px;
+      li {
+        width: min-content;
+      }
+    }
   }
 `;
