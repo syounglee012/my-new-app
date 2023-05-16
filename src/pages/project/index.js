@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import project from "@/data/project.json";
 import Image from "next/image";
@@ -42,11 +42,12 @@ export default function Project() {
                     ? restroomImg
                     : ""
                 }
-                loading="lazy"
                 alt={item.title}
                 className="project-image"
-                width={550}
-                height={500}
+                width={500}
+                height={260}
+                placeholder="blur"
+                blurDataURL={"/images/blur.jpeg"}
               />
 
               <BottomWrap>
@@ -187,9 +188,11 @@ const ListWrap = styled.div`
 
   .project-image {
     width: 100%;
-    height: 100%;
     margin-bottom: 1rem;
     opacity: 0.7;
+  }
+  .loading-image {
+    margin: 6rem auto;
   }
 
   h5 {
