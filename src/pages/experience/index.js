@@ -51,8 +51,8 @@ const Container = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 1rem;
+  justify-content: flex-start;
+  padding: 15rem 0 0 0;
   h4 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
@@ -60,6 +60,9 @@ const Container = styled.div`
     margin-bottom: 3rem;
     margin-top: 0;
     color: #ffda63;
+  }
+  @media (max-width: 768px) {
+    padding: 0 1rem;
   }
 `;
 
