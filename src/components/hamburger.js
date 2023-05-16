@@ -100,11 +100,11 @@ const Container = styled.div`
 
   .menu-items {
     position: absolute;
-    top: 70px;
+    top: 68px;
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 30rem;
     list-style: none;
     opacity: 0;
     background-color: #ffda63;
@@ -115,6 +115,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     @media (max-width: 850px) {
       display: grid;
+      padding: 1rem 0rem;
     }
   }
 
