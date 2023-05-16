@@ -17,7 +17,7 @@
     "website": "https://www.texfamilylawyer.com/",
     "github": "https://github.com/syounglee012/DallyAndWebb",
     "framework": ["Next.js", "Node.js", "Styled-Component", "NodeMailer"],
-    "responsibilities": ["Developed it from scratch using Next.js", "Implemented user-friendly interfaces while ensuring optimal website functionality", "Collaborated closely with a UX designer to incorporate a more intuitive UI and responsive design", "Emphasized clean, efficient, and well-documented code practices", "Identified and resolved issues by troubleshooting and debugging code as needed", "Integrated Google reCaptcha v3 to safeguard the website from spam and abuse", "Leveraged the Google Maps API to enhance the user experience on the website"]
+    "responsibilities": ["Developed a web application for a client from scratch using Next.js", "Implemented user-friendly interfaces while ensuring optimal website functionality", "Collaborated closely with a UX designer to incorporate a more intuitive UI and responsive design", "Emphasized clean, efficient, and well-documented code practices", "Identified and resolved issues by troubleshooting and debugging code as needed", "Integrated Google reCaptcha v3 to safeguard the website from spam and abuse", "Leveraged the Google Maps API to enhance the user experience on the website"]
   },
   {
     "id": 2,
@@ -37,7 +37,7 @@
     "website": "https://samlee-git-main-syounglee012.vercel.app/home",
     "github": "https://github.com/syounglee012/my-app",
     "framework": ["Next.js", "Styled-Component", "Email.js"],
-    "responsibilities": ["Developed it from scratch using Next.js", "Implemented user-friendly interfaces while ensuring optimal website functionality", "Emphasized clean, efficient, and well-documented code practices", "Identified and resolved issues by troubleshooting and debugging code as needed"]
+    "responsibilities": ["Developed a web application from scratch using Next.js", "Implemented user-friendly interfaces while ensuring optimal website functionality", "Emphasized clean, efficient, and well-documented code practices", "Identified and resolved issues by troubleshooting and debugging code as needed"]
   },
   {
     "id": 4,
