@@ -42,6 +42,7 @@ export default function Project() {
                     ? restroomImg
                     : ""
                 }
+                loading="lazy"
                 alt={item.title}
                 className="project-image"
                 width={550}
