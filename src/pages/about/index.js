@@ -84,6 +84,7 @@ const Wrap = styled.div`
   .hi {
     color: #ffda63;
     margin-bottom: 10px;
+    font-size: 18px;
   }
   h1 {
     font-size: 60px;
@@ -98,6 +99,13 @@ const Wrap = styled.div`
 
   @media (max-width: 768px) {
     padding: 10rem 20px 5rem;
+
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 40px;
+    }
   }
 `;
 
