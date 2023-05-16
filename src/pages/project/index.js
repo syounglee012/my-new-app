@@ -47,7 +47,7 @@ export default function Project() {
                 width={500}
                 height={260}
                 placeholder="blur"
-                blurDataURL={"/images/blur.png"}
+                blurDataURL={"/images/blur.PNG"}
               />
 
               <BottomWrap>
