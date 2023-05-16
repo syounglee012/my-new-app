@@ -104,7 +104,7 @@ const Container = styled.div`
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 30rem;
+    padding: 1rem 26rem;
     list-style: none;
     opacity: 0;
     background-color: #ffda63;
@@ -120,6 +120,8 @@ const Container = styled.div`
   }
 
   .menu-items li {
+    width: fit-content;
+    min-width: 180px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
     font-size: 20px;
     color: #0a192f;
