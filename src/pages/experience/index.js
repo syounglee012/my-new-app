@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import work from "@/data/work.json";
 
@@ -9,21 +9,18 @@ export default function Experience() {
     <Container>
       <h4>Work Experience</h4>
       <Wrap>
-        <ToggleWrap>
-          <Virtical />
-          <Toggle>
-            {work.map((item) => (
-              <ul key={item.id}>
-                <li
-                  className={selected === item.id ? "clicked" : null}
-                  onClick={() => setSelected(item.id)}
-                >
-                  {item.company}
-                </li>
-              </ul>
-            ))}
-          </Toggle>
-        </ToggleWrap>
+        <Toggle>
+          {work.map((item) => (
+            <ul key={item.id}>
+              <li
+                className={selected === item.id ? "clicked" : null}
+                onClick={() => setSelected(item.id)}
+              >
+                {item.company}
+              </li>
+            </ul>
+          ))}
+        </Toggle>
 
         {work.map((item) =>
           selected === item.id ? (
@@ -52,7 +49,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 15rem 0 0 0;
+  padding: 10rem 0 0 0;
   h4 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
@@ -62,7 +59,7 @@ const Container = styled.div`
     color: #ffda63;
   }
   @media (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 8rem 1rem 0 1rem;
   }
 `;
 
@@ -120,32 +117,23 @@ const ListWrap = styled.div`
   }
 `;
 
-const ToggleWrap = styled.div`
-  width: 100%;
-  max-width: 230px;
-  display: flex;
-  padding-top: 3rem;
+// const ToggleWrap = styled.div`
+//   width: 100%;
+//   max-width: 230px;
+//   display: flex;
+//   padding-top: 3rem;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-    padding-top: 0;
-  }
-`;
-
-const Virtical = styled.div`
-  width: 1px;
-  height: 100px;
-  background-color: #ffffff;
-  opacity: 0.3;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+//   @media (max-width: 768px) {
+//     max-width: 100%;
+//     padding-top: 0;
+//   }
+// `;
 
 const Toggle = styled.div`
   width: 100%;
   margin: 0;
+  max-width: 230px;
+  padding-top: 3rem;
 
   ul {
     padding: 0 0 0 10px;
@@ -170,6 +158,7 @@ const Toggle = styled.div`
   }
 
   @media (max-width: 768px) {
+    max-width: 100%;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -177,6 +166,7 @@ const Toggle = styled.div`
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: none;
     margin-bottom: 2rem;
+    padding-top: 0;
 
     &::-webkit-scrollbar {
       display: none;
