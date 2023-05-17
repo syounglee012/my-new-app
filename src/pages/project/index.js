@@ -93,21 +93,18 @@ export default function Project() {
           ) : null
         )}
 
-        <ToggleWrap>
-          <Virtical />
-          <Toggle>
-            {project.map((item) => (
-              <ul key={item.id}>
-                <li
-                  className={selected === item.id ? "clicked" : null}
-                  onClick={() => setSelected(item.id)}
-                >
-                  {item.title}
-                </li>
-              </ul>
-            ))}
-          </Toggle>
-        </ToggleWrap>
+        <Toggle>
+          {project.map((item) => (
+            <ul key={item.id}>
+              <li
+                className={selected === item.id ? "clicked" : null}
+                onClick={() => setSelected(item.id)}
+              >
+                {item.title}
+              </li>
+            </ul>
+          ))}
+        </Toggle>
       </Wrap>
     </Container>
   );
@@ -131,6 +128,7 @@ const Container = styled.div`
     text-align: right;
   }
   @media (max-width: 768px) {
+    height: 100%;
     padding: 1rem;
     h4 {
       text-align: left;
@@ -188,11 +186,9 @@ const ListWrap = styled.div`
 
   .project-image {
     width: 100%;
+    height: 100%;
     margin-bottom: 1rem;
     opacity: 0.7;
-  }
-  .loading-image {
-    margin: 6rem auto;
   }
 
   h5 {
@@ -259,34 +255,11 @@ const ListWrap = styled.div`
   }
 `;
 
-const ToggleWrap = styled.div`
-  width: 100%;
-  max-width: 230px;
-  display: flex;
-  padding-top: 3rem;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    padding-top: 0;
-    margin-bottom: 2rem;
-  }
-`;
-
-const Virtical = styled.div`
-  width: 1px;
-  height: 300px;
-  background-color: #ffffff;
-  opacity: 0.3;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
 const Toggle = styled.div`
   width: 100%;
   margin: 0;
+  max-width: 230px;
+  padding-top: 3rem;
 
   ul {
     padding: 0 0 0 10px;
@@ -310,6 +283,9 @@ const Toggle = styled.div`
   }
 
   @media (max-width: 768px) {
+    max-width: 100%;
+    padding-top: 0;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
 
