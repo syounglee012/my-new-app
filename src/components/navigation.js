@@ -11,7 +11,6 @@ export default function Navigation({
     if (window) {
       let prevScrollPos = window.pageYOffset;
       window.onscroll = function () {
-        console.log(window.pageYOffset);
         let currentScrollPos = window.pageYOffset;
         if (prevScrollPos > currentScrollPos || window.pageYOffset < 1) {
           document.getElementById("mainNav").classList.remove("nav-hidden");
