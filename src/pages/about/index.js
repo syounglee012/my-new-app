@@ -32,7 +32,7 @@ export default function About() {
 
           <span
             onClick={() =>
-              window.open("https://www.linkedin.com/in/swe-samlee/")
+              window.open("https://www.linkedin.com/in/webdevsamlee/")
             }
           >
             <CiLinkedin size={28} className="icon" />
