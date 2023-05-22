@@ -90,7 +90,7 @@ const Container = styled.div`
   position: relative;
 
   .transition {
-    animation: fadeIn 3s ease-in-out forwards; /* Animation properties */
+    animation: fadeIn 2s ease-in-out forwards; /* Animation properties */
   }
 
   @keyframes fadeIn {
