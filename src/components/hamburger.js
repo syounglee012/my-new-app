@@ -198,7 +198,7 @@ const Container = styled.div`
 
   .check:checked ~ .ham-menu .line1 {
     display: block;
-    transform: rotate(45deg);
+    transform: rotate(43deg);
   }
 
   .check:checked ~ .ham-menu .line2 {
@@ -207,6 +207,6 @@ const Container = styled.div`
 
   .check:checked ~ .ham-menu .line3 {
     display: block;
-    transform: rotate(-45deg);
+    transform: rotate(-43deg);
   }
 `;
