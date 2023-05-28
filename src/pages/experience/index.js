@@ -49,7 +49,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10rem 0 0 0;
+  padding: 10rem 2rem 0 2rem;
   h4 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
