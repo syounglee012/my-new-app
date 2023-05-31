@@ -6,7 +6,7 @@
     "period": "September 2022 - Present",
     "website": "https://www.triumphgroup.com/",
     "github": null,
-    "framework": ["Next.js", "Node.js", "Strapi", "Styled-Component", "Algolia"],
+    "framework": ["Next.js", "Node.js", "Strapi", "Algolia" , "Bootstrap"],
     "responsibilities": ["Developing a reusable advanced search component that enables customers to search", "Using the dynamic and federated search utilized by over 5000 employees and other consumers, the number of required searches and costs associated with each query were significantly reduced", "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi", "Collaborating with UX designers to implement a more user-friendly UI and responsive design" ]
   },
   {
@@ -46,7 +46,7 @@
     "period": "May 2022 - June 2022",
     "video": "https://www.youtube.com/watch?v=t1LJ9YDRG0s",
     "github": "https://github.com/syounglee012/Soldier-Challengers",
-    "framework": ["React.js", "Styled-Component", "Socket.io", "Social-Login"],
+    "framework": ["React.js","Redux", "Socket.io", "Social-Login"],
     "responsibilities": ["Worked with professional designers using an agile methodology and process", "Built a production-ready web application to help veterans to accomplish a set goal in life", "Worked in many roles such as PM, Front-End dev, and Quality Engineer", "Came up with requirements and helped to define MVP", "Implemented a chatting module using Socket.io to enable a real-time communication between sers", "Built a robust social login feature to reduce friction" ]
   },
   {
@@ -56,7 +56,7 @@
     "period": "April 2022 - April 2022",
     "video": "https://www.youtube.com/watch?v=_XbL2yDDNwc",
     "github": "https://github.com/syounglee012/Looking-Good",
-    "framework": ["React.js", "REST API", "Styled-Component", "Bootstrap"],
+    "framework": ["React.js","Redux", "REST API", "Styled-Component"],
     "responsibilities": ["Facilitated and led overall CSS effort as a lead front-end dev", "Used CSS Masonry layout to dynamically populate randomly curated photos with different dimensions", "Implemented an easy-to-use comment feature to drive usage where users can freely communicate with each other" ]
   },
   {
@@ -66,7 +66,7 @@
     "period": "March 2022 - March 2022",
     "video": "https://www.youtube.com/watch?v=-qfgqgFdOCw",
     "github": "https://github.com/syounglee012/Seoul-Restroom",
-    "framework": ["HTML", "CSS", "JavaScript", "MongoDB"],
+    "framework": ["HTML5", "CSS3", "JavaScript", "MongoDB"],
     "responsibilities": ["Came up with the project idea ”Seoul Restroom” and delegated tasks to each team member", "Managed and led a team of 4 from designing front-end UI components to configuring back-end APIs", "Implemented review feature that enhances information sharing among the users", "Used MongoDB to quickly adapt to alterations in data structure during the project", " Implemented a map feature by using Google-map API that allows users to quickly locate nearby restrooms" ]
   }
 ]
