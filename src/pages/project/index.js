@@ -113,7 +113,7 @@ export default function Project() {
 const Container = styled.div`
   width: 100%;
   max-width: 910px;
-  height: 100%;
+  height: 110vh;
   color: #ccd6f6;
   margin: 0 auto;
   padding: 2rem;
@@ -127,7 +127,10 @@ const Container = styled.div`
     color: #ffda63;
     text-align: right;
   }
-  @media (max-width: 768px) {
+  @media (min-width: 869px) and (max-width: 1300px) {
+    height: 140vh;
+  }
+  @media (max-width: 868px) {
     padding: 1rem;
     h1 {
       text-align: left;
