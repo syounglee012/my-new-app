@@ -29,7 +29,7 @@ export default class _Document extends Document {
   }
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link rel="icon" href="/images/favicon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
