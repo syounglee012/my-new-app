@@ -43,6 +43,7 @@ export default function Hamburger({
       <input
         type="checkbox"
         className={"check"}
+        aria-labelledby="checkbox"
         checked={isOpen}
         onClick={() => handleClick()}
         onChange={() => handleClick()}
