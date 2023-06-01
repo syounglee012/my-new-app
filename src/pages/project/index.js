@@ -19,7 +19,7 @@ export default function Project() {
 
   return (
     <Container>
-      <h4>Project</h4>
+      <h1>Project</h1>
       <Wrap>
         {project.map((item) =>
           selected === item.id ? (
@@ -118,7 +118,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 2rem;
   align-self: start;
-  h4 {
+  h1 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
     font-size: 30px;
@@ -130,7 +130,7 @@ const Container = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     padding: 1rem;
-    h4 {
+    h1 {
       text-align: left;
     }
   }
