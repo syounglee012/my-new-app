@@ -7,7 +7,7 @@ export default function Experience() {
 
   return (
     <Container>
-      <h4>Work Experience</h4>
+      <h1>Work Experience</h1>
       <Wrap>
         <Toggle>
           {work.map((item) => (
@@ -50,7 +50,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   padding: 10rem 2rem 0 2rem;
-  h4 {
+  h1 {
     font-family: "Courier New", Courier, monospace;
     width: 100%;
     font-size: 30px;
