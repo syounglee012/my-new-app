@@ -131,6 +131,7 @@ const Container = styled.div`
     height: 140vh;
   }
   @media (max-width: 868px) {
+    height: 100%;
     padding: 1rem;
     h1 {
       text-align: left;
@@ -290,7 +291,7 @@ const Toggle = styled.div`
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
-
+    gap: 10px;
     ul li {
       font-size: 16px;
       padding: 0 10px 0 0;
