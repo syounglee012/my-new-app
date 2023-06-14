@@ -25,7 +25,17 @@ export default function Experience() {
         {work.map((item) =>
           selected === item.id ? (
             <ListWrap key={item.id}>
-              <h5>{item.position}</h5> <h6> @{item.company}</h6>
+              <h5>{item.position}</h5>{" "}
+              <h6
+                onClick={() =>
+                  item.company === "Triumph"
+                    ? window.open("https://www.triumphgroup.com/home")
+                    : window.open("https://bluerockmarketing.net/")
+                }
+              >
+                {" "}
+                @{item.company}
+              </h6>
               <p>{item.duration}</p>
               <ul>
                 {item.responsibilities.map((responsibility) => (
@@ -86,6 +96,7 @@ const ListWrap = styled.div`
     font-size: 20px;
     display: inline-block;
     color: #ffda63;
+    cursor: pointer;
   }
   p {
     font-size: 18px;
