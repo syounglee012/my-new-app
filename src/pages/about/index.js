@@ -24,7 +24,7 @@ export default function About() {
         <BottomWrap>
           <button
             className="button"
-            onClick={() => window.open("files/Resume.pdf")}
+            onClick={() => window.open("files/resume.pdf")}
           >
             Resume
           </button>
