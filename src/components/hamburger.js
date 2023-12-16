@@ -36,7 +36,7 @@ export default function Hamburger({
     <Container ref={closeRef}>
       <h4
         className="logo"
-        onClick={() => (window.location.href = "https://www.samlee.tech")}
+        onClick={() => (window.location.href = "https://www.samlee.us")}
       >
         SL
       </h4>
