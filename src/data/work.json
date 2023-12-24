@@ -12,7 +12,7 @@
     "id": 1,
     "company": "Triumph",
     "position": "Front End Developer",
-    "duration": "September 2022 - Present",
+    "duration": "September 2022 - September 2023",
     "responsibilities": ["Developing a reusable advanced search component that enables customers to search", "Using the dynamic and federated search utilized by over 5000 employees and other consumers, the number of required searches and costs associated with each query were significantly reduced", "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi", "Collaborating with UX designers to implement a more user-friendly UI and responsive design" ]
   }
 
