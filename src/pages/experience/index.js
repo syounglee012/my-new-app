@@ -37,6 +37,7 @@ export default function Experience() {
                 @{item.company}
               </h6>
               <p>{item.duration}</p>
+              <p>{item.location}</p>
               <ul>
                 {item.responsibilities.map((responsibility) => (
                   <li key={responsibility}>{responsibility}</li>
@@ -101,7 +102,7 @@ const ListWrap = styled.div`
   p {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   ul {
     list-style: none;

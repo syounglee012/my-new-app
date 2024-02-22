@@ -4,16 +4,18 @@
   {
     "id": 0,
     "company": "BlueRock Marketing",
-    "position": "Full Stack Developer",
+    "location": "Dallas/Ft. Worth, TX",
+    "position": "Front End Developer",
     "duration": "April 2023 - Present",
-    "responsibilities": ["Developing web applications using various programming languages and frameworks", "Creating user-friendly interfaces and ensuring optimal website functionality", "Collaborating with designers, developers, and project managers to meet project deadlines", "Writing clean, efficient, and well-documented code", "Troubleshooting and debugging code as required"]
+    "responsibilities": ["Lead in developing and launching scalable web applications with React.js and Next.js","Authored, optimized, and maintained clean, efficient code, reducing system bugs, contributing to a 20% faster feature deployment rate, and improving the overall development lifecycle","Actively participated in Agile development sprints, contributing to continuous improvement in processes and collaboration within the development team", "Creating user-friendly interfaces and ensuring optimal website functionality", "Writing clean, efficient, and well-documented code", "Troubleshooting and debugging code as required"]
   },
   {
     "id": 1,
     "company": "Triumph",
+    "location": "Seattle, WA",
     "position": "Front End Developer",
     "duration": "September 2022 - September 2023",
-    "responsibilities": ["Developing a reusable advanced search component that enables customers to search", "Using the dynamic and federated search utilized by over 5000 employees and other consumers, the number of required searches and costs associated with each query were significantly reduced", "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi", "Collaborating with UX designers to implement a more user-friendly UI and responsive design" ]
+    "responsibilities": ["Led the creation of a cutting-edge search component, resulting in a 60% reduction in search times for more than 4800 employees and customers", "Introduced dynamic and federated search functionalities, leading to a 25% decrease in operational expenses and a 40% improvement in query response times", "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi", " Collaborated closely with UX designers and other stakeholders to revamp the website's UI, significantly increasing website responsiveness and improving UI efficiency" ]
   }
 
 ]
