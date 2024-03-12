@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import project from "@/data/project.json";
 import Image from "next/image";
+import docImg from "../../../public/images/doc.png";
 import triumphImg from "../../../public/images/triumph.png";
 import lawImg from "../../../public/images/law.png";
 import devotionImg from "../../../public/images/devotion.png";
@@ -26,7 +27,9 @@ export default function Project() {
             <ListWrap key={item.id}>
               <Image
                 src={
-                  item.image === "triumph"
+                  item.image == "doc"
+                    ? docImg
+                    : item.image === "triumph"
                     ? triumphImg
                     : item.image === "law"
                     ? lawImg
