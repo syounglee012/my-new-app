@@ -28,7 +28,9 @@ export default function Experience() {
               <h5>{item.position}</h5>{" "}
               <h6
                 onClick={() =>
-                  item.company === "Triumph"
+                  item.id === 0
+                    ? window.open("http://www.docktorly.com/")
+                    : item.id === 2
                     ? window.open("https://www.triumphgroup.com/home")
                     : window.open("https://bluerockmarketing.net/")
                 }
@@ -128,18 +130,6 @@ const ListWrap = styled.div`
     }
   }
 `;
-
-// const ToggleWrap = styled.div`
-//   width: 100%;
-//   max-width: 230px;
-//   display: flex;
-//   padding-top: 3rem;
-
-//   @media (max-width: 768px) {
-//     max-width: 100%;
-//     padding-top: 0;
-//   }
-// `;
 
 const Toggle = styled.div`
   width: 100%;
