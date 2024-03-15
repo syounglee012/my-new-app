@@ -28,7 +28,9 @@ export default function Experience() {
               <h5>{item.position}</h5>{" "}
               <h6
                 onClick={() =>
-                  item.company === "Triumph"
+                  item.id === 0
+                    ? window.open("http://www.docktorly.com/")
+                    : item.id === 2
                     ? window.open("https://www.triumphgroup.com/home")
                     : window.open("https://bluerockmarketing.net/")
                 }
