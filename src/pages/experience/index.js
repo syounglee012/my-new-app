@@ -35,7 +35,6 @@ export default function Experience() {
                     : window.open("https://bluerockmarketing.net/")
                 }
               >
-                {" "}
                 @{item.company}
               </h6>
               <p>{item.duration}</p>
