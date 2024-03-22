@@ -43,7 +43,7 @@ const Container = styled.div`
     top: 0;
     background-color: #ffda63;
     transition: transform 0.3s ease-in-out;
-    animation: fadeIn 3s ease-in-out forwards; /* Animation properties */
+    animation: fadeIn 3s ease-in-out forwards;
     position: fixed;
     left: 0;
     z-index: 1;
@@ -67,7 +67,5 @@ const Container = styled.div`
     font-size: 30px;
     color: #ffda63;
     z-index: 2;
-    /* margin: 0;
-    padding: 0; */
   }
 `;
