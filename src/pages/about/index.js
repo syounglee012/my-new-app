@@ -12,7 +12,7 @@ export default function About() {
         <h1>Sam Lee.</h1>
         <h2>I create things for the web.</h2>
         <span className="top-p">
-          I&#39;m a web developer based in the beautiful city of{" "}
+          I&#39;m a software engineer based in the beautiful city of
           <p className="p-colored"> Seattle, WA.</p>
         </span>
 
