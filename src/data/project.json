@@ -7,7 +7,7 @@
     "period": "Current",
     "website": "http://www.docktorly.com/",
     "github": null,
-    "framework": ["Next.js", "Node.js", "Tailwind"],
+    "framework": ["Next.js", "Node.js", "Supabase", "Sass" ],
     "responsibilities": ["Working in a fast-paced environment to deliver high quality software", 
     "Owning the interaction with the business to gather requirements from all levels of employees",
      "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", 
