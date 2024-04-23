@@ -41,7 +41,7 @@
     "image": "devotion",
     "title": "Daily Devotion",
     "period": "February 2023",
-    "website": "https://www.scripture.today",
+    "website": "https://daily-devotion-pearl.vercel.app",
     "github": "https://github.com/syounglee012/daily_devotion",
     "framework": ["React.js", "REST API", "Styled-Component"],
     "responsibilities": ["Developed an automated system that generates a new chapter from the Book of Proverbs each day using React.js.", "Implemented a comprehensive search engine that covers the entire Bible, enabling users to search for specific passages, verses, or keywords efficiently", "Designed and implemented user-friendly interfaces while ensuring optimal website functionality", "Enhanced the user experience by integrating a voice-reading feature, enabling users to listen to the scripture for improved accessibility and convenience" ]
