@@ -46,16 +46,7 @@
     "framework": ["React.js", "REST API", "Styled-Component"],
     "responsibilities": ["Developed an automated system that generates a new chapter from the Book of Proverbs each day using React.js.", "Implemented a comprehensive search engine that covers the entire Bible, enabling users to search for specific passages, verses, or keywords efficiently", "Designed and implemented user-friendly interfaces while ensuring optimal website functionality", "Enhanced the user experience by integrating a voice-reading feature, enabling users to listen to the scripture for improved accessibility and convenience" ]
   },
-  {
-    "id": 4,
-    "image": "portfolio",
-    "title": "My First Portfolio",
-    "period": "November 2022",
-    "website": "https://samlee-git-main-syounglee012.vercel.app/home",
-    "github": "https://github.com/syounglee012/my-app",
-    "framework": ["Next.js", "Styled-Component", "Email.js"],
-    "responsibilities": ["Developed a web application from scratch using Next.js", "Implemented user-friendly interfaces while ensuring optimal website functionality", "Emphasized clean, efficient, and well-documented code practices", "Identified and resolved issues by troubleshooting and debugging code as needed"]
-  },
+ 
   {
     "id": 5,
     "image": "challenge",
