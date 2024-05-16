@@ -3,30 +3,44 @@
     "id": 0,
     "company": "Docktorly",
     "location": "Seattle, WA",
-    "position": "Software Engineer",
+    "position": "Founding Software Engineer",
     "duration": "March 2024 - Present",
-    "responsibilities": [" Working in a fast-paced environment to deliver high quality software",
-    "Owning the interaction with the business to gather requirements from all levels of employees", 
-    "Collaborated closely with UX designers, Product Managers and Software Development Engineers to investigate design approaches, prototype new technology and evaluate technical feasibility",
-  "Design and implement scalable software solutions for the Docktorly platform, focusing on enhancing the consultation process for primary care providers and specialists",
-"Collaborate with the security team to maintain the platform's compliance with HIPAA regulations, ensuring the protection of sensitive patient information"]
+    "responsibilities": [
+      " Working in a fast-paced environment to deliver high quality software",
+      "Owning the interaction with the business to gather requirements from all levels of employees",
+      "Collaborated closely with UX designers, Product Managers and Software Development Engineers to investigate design approaches, prototype new technology and evaluate technical feasibility",
+      "Design and implement scalable software solutions for the Docktorly platform, focusing on enhancing the consultation process for primary care providers and specialists",
+      "Collaborate with the security team to maintain the platform's compliance with HIPAA regulations, ensuring the protection of sensitive patient information"
+    ]
   },
-  
+
   {
     "id": 1,
     "company": "BlueRock Marketing",
     "location": "Dallas/Ft. Worth, TX",
-    "position": "Front End Developer",
+    "position": "Frontend Developer",
     "duration": "April 2023 - Present",
-    "responsibilities": ["Lead in developing and launching scalable web applications with React.js and Next.js","Authored, optimized, and maintained clean, efficient code, reducing system bugs, contributing to a 20% faster feature deployment rate, and improving the overall development lifecycle","Actively participated in Agile development sprints, contributing to continuous improvement in processes and collaboration within the development team", "Creating user-friendly interfaces and ensuring optimal website functionality", "Writing clean, efficient, and well-documented code", "Troubleshooting and debugging code as required"]
+    "responsibilities": [
+      "Lead in developing and launching scalable web applications with React.js and Next.js",
+      "Authored, optimized, and maintained clean, efficient code, reducing system bugs, contributing to a 20% faster feature deployment rate, and improving the overall development lifecycle",
+      "Actively participated in Agile development sprints, contributing to continuous improvement in processes and collaboration within the development team",
+      "Creating user-friendly interfaces and ensuring optimal website functionality",
+      "Writing clean, efficient, and well-documented code",
+      "Troubleshooting and debugging code as required"
+    ]
   },
   {
     "id": 2,
     "company": "Triumph Group",
     "location": "Seattle, WA",
-    "position": "Front End Developer",
+    "position": "Frontend Developer",
     "duration": "September 2022 - September 2023",
-    "responsibilities": ["Led the creation of a cutting-edge search component, resulting in a 60% reduction in search times for more than 4800 employees and customers", "Introduced dynamic and federated search functionalities, leading to a 25% decrease in operational expenses and a 40% improvement in query response times", "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map", "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi", " Collaborated closely with UX designers and other stakeholders to revamp the website's UI, significantly increasing website responsiveness and improving UI efficiency" ]
+    "responsibilities": [
+      "Led the creation of a cutting-edge search component, resulting in a 60% reduction in search times for more than 4800 employees and customers",
+      "Introduced dynamic and federated search functionalities, leading to a 25% decrease in operational expenses and a 40% improvement in query response times",
+      "Utilizing the Google API, a robust locations finder was developed for all 28 Triumph locations in 8 different countries, allowing users to scroll the globe to locate and view a more detailed map",
+      "Architectured back end data model for all of the data that is consumed by the company website and features using Strapi",
+      " Collaborated closely with UX designers and other stakeholders to revamp the website's UI, significantly increasing website responsiveness and improving UI efficiency"
+    ]
   }
-
 ]
