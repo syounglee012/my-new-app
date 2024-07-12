@@ -1,21 +1,6 @@
 [
   {
     "id": 0,
-    "company": "Docktorly",
-    "location": "Seattle, WA",
-    "position": "Founding Software Engineer",
-    "duration": "March 2024 - Present",
-    "responsibilities": [
-      " Working in a fast-paced environment to deliver high quality software",
-      "Owning the interaction with the business to gather requirements from all levels of employees",
-      "Collaborated closely with UX designers, Product Managers and Software Development Engineers to investigate design approaches, prototype new technology and evaluate technical feasibility",
-      "Design and implement scalable software solutions for the Docktorly platform, focusing on enhancing the consultation process for primary care providers and specialists",
-      "Collaborate with the security team to maintain the platform's compliance with HIPAA regulations, ensuring the protection of sensitive patient information"
-    ]
-  },
-
-  {
-    "id": 1,
     "company": "BlueRock Marketing",
     "location": "Dallas/Ft. Worth, TX",
     "position": "Frontend Developer",
@@ -27,6 +12,20 @@
       "Creating user-friendly interfaces and ensuring optimal website functionality",
       "Writing clean, efficient, and well-documented code",
       "Troubleshooting and debugging code as required"
+    ]
+  },
+  {
+    "id": 1,
+    "company": "Docktorly",
+    "location": "Seattle, WA",
+    "position": "Founding Software Engineer",
+    "duration": "March 2024 - June 2024",
+    "responsibilities": [
+      " Working in a fast-paced environment to deliver high quality software",
+      "Owning the interaction with the business to gather requirements from all levels of employees",
+      "Collaborated closely with UX designers, Product Managers and Software Development Engineers to investigate design approaches, prototype new technology and evaluate technical feasibility",
+      "Design and implement scalable software solutions for the Docktorly platform, focusing on enhancing the consultation process for primary care providers and specialists",
+      "Collaborate with the security team to maintain the platform's compliance with HIPAA regulations, ensuring the protection of sensitive patient information"
     ]
   },
   {
